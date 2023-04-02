@@ -90,8 +90,8 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
         showLineNumbers={true}
         codeTagProps={{
           style: {
-            'font-family': 'Consolas, Monaco, monospace',
-            fontSize: "14px"
+            fontFamily: 'Consolas, Monaco, monospace',
+            fontSize: '14px'
           }
         }}
         lineNumberStyle={{
