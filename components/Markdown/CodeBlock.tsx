@@ -88,6 +88,7 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
         style={dracula}
         customStyle={{ margin: 0 }}
         showLineNumbers={true}
+        lineNumberStyle={{opacity: 0.2}}
       >
         {value}
       </SyntaxHighlighter>
