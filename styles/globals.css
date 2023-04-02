@@ -41,3 +41,14 @@ html {
 pre:has(div.codeblock) {
   padding: 0;
 }
+
+/* Custom */
+.codeblock {
+    background: #212123;
+}
+.codeblock pre {
+    background: #27272a !important;
+}
+code span {
+    background: #212123 !important;
+}

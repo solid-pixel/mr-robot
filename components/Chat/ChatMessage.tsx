@@ -72,10 +72,10 @@ export const ChatMessage: FC<Props> = memo(
 
     return (
       <div
-        className={`group m-4 rounded-[5px] px-4 ${
+        className={`group m-4 rounded-[20px] px-4 ${
           message.role === 'assistant'
-            ? 'border-b border-black/10  bg-indigo-800 text-gray-800 dark:border-gray-900/50 dark:bg-indigo-800 dark:text-gray-100'
-            : 'border-b border-black/10 bg-gray-100 text-gray-800 dark:border-gray-900/50 dark:bg-zinc-800  dark:text-gray-300'
+          ? 'rounded-tr-none border-b border-black/10  bg-gray-200 text-gray-800 dark:border-gray-900/50 dark:bg-zinc-700 dark:text-gray-100'
+          : 'rounded-tl-none border-b border-black/10 bg-gray-50 text-gray-700 dark:border-gray-900/50 dark:bg-zinc-800  dark:text-gray-300'
         }`}
         style={{ overflowWrap: 'anywhere' }}
       >
