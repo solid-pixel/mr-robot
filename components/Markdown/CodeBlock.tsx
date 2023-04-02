@@ -64,7 +64,7 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
 
         <div className="flex items-center">
           <button
-            className="flex gap-1.5 items-center rounded bg-none p-1 text-xs text-zinc-400 hover:text-emerald-400"
+            className="flex gap-1.5 items-center rounded bg-none p-1 text-xs text-zinc-400 hover:text-[#a5e844]"
             onClick={copyToClipboard}
           >
             {isCopied ? (
@@ -75,7 +75,7 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
             {isCopied ? t('Copied!') : t('Copy code')}
           </button>
           <button
-            className="flex items-center rounded bg-none p-1 text-xs text-zinc-400 hover:text-emerald-400"
+            className="flex items-center rounded bg-none p-1 text-xs text-zinc-400 hover:text-[#a5e844]"
             onClick={downloadAsFile}
           >
             <IconDownload size={18} />
@@ -90,7 +90,7 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
         showLineNumbers={true}
         codeTagProps={{
           style: {
-            fontFamily: 'Consolas, Monaco, monospace',
+            fontFamily: 'Monaco, monospace',
             fontSize: '14px'
           }
         }}

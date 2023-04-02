@@ -53,11 +53,16 @@ pre:has(div.codeblock) {
   border-radius: 15px;
 }
 .sender {
-  display: none !important;
+  position: absolute;
+  top: 8px;
+  right: -11px;
+  font-size: 12px;
+  opacity: .2;
 }
 pre code {
   background: transparent !important;
 }
+
 /* code span {
     background: #212123 !important;
 } */
