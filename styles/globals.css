@@ -55,6 +55,9 @@ pre:has(div.codeblock) {
 .sender {
   display: none !important;
 }
+pre code {
+  background: transparent !important;
+}
 /* code span {
     background: #212123 !important;
 } */
