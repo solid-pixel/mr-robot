@@ -64,7 +64,7 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
 
         <div className="flex items-center">
           <button
-            className="flex gap-1.5 items-center rounded bg-none p-1 text-xs text-zinc-400 hover:text-[#a5e844]"
+            className="flex gap-1.5 items-center rounded bg-none p-1 text-xs text-zinc-400 hover:text-[#f2ff00]"
             onClick={copyToClipboard}
           >
             {isCopied ? (
@@ -75,7 +75,7 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
             {isCopied ? t('Copied!') : t('Copy code')}
           </button>
           <button
-            className="flex items-center rounded bg-none p-1 text-xs text-zinc-400 hover:text-[#a5e844]"
+            className="flex items-center rounded bg-none p-1 text-xs text-zinc-400 hover:text-[#f2ff00]"
             onClick={downloadAsFile}
           >
             <IconDownload size={18} />
