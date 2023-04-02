@@ -6,7 +6,7 @@ import { IconCheck, IconClipboard, IconDownload } from '@tabler/icons-react';
 import { useTranslation } from 'next-i18next';
 import { FC, memo, useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { materialDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 interface Props {
   language: string;
@@ -85,9 +85,15 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
 
       <SyntaxHighlighter
         language={language}
-        style={dracula}
+        style={materialDark}
         customStyle={{ margin: 0, lineHeight: '1.5rem', background: 'linear-gradient(135deg, rgb(31 31 35), rgba(84, 22, 210, 0.07))' }}
         showLineNumbers={true}
+        codeTagProps={{
+          style: {
+            'font-family': 'Consolas, Monaco, monospace',
+            fontSize: "14px"
+          }
+        }}
         lineNumberStyle={{
           opacity: 0.3, marginRight: '1.5em', lineHeight: '1.5rem', borderRight: '1px solid #ffffff2e', paddingRight: '1.2em', minWidth: '5ch' }}
         
