@@ -49,6 +49,12 @@ pre:has(div.codeblock) {
 .codeblock pre {
     background: #27272a !important;
 }
-code span {
-    background: #212123 !important;
+.prose :where(pre):not(:where([class~=not-prose] *)) {
+  border-radius: 15px !important;
 }
+.sender {
+  display: none !important;
+}
+/* code span {
+    background: #212123 !important;
+} */

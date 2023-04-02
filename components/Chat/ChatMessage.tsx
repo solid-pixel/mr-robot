@@ -72,16 +72,16 @@ export const ChatMessage: FC<Props> = memo(
 
     return (
       <div
-        className={`group m-4 rounded-[20px] px-4 ${
+        className={`group m-4 rounded-[15px] px-4 ${
           message.role === 'assistant'
-          ? 'rounded-tr-none border-b border-black/10  bg-gray-200 text-gray-800 dark:border-gray-900/50 dark:bg-zinc-700 dark:text-gray-100'
-          : 'rounded-tl-none border-b border-black/10 bg-gray-50 text-gray-700 dark:border-gray-900/50 dark:bg-zinc-800  dark:text-gray-300'
+          ? 'rounded-tl-none border-b border-black/10  bg-gray-200 text-gray-800 dark:border-gray-900/50 dark:bg-zinc-700 dark:text-gray-100'
+          : 'rounded-tr-none border-b border-black/10 bg-gray-50 text-gray-800 dark:border-gray-900/50 dark:bg-zinc-800  dark:text-gray-400'
         }`}
         style={{ overflowWrap: 'anywhere' }}
       >
         <div className="relative m-auto flex gap-4 p-4 text-base md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
-          <div className="min-w-[40px] text-right font-bold">
-            {message.role === 'assistant' ? t('AI') : t('You')}:
+          <div className="min-w-[40px] text-right font-bold sender">
+            {message.role === 'assistant' ? t('AI') : t('You')}
           </div>
 
           <div className="prose mt-[-2px] w-full dark:prose-invert">
