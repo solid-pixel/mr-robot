@@ -153,13 +153,13 @@ export const Chat: FC<Props> = memo(
       <div className="relative flex-1 overflow-hidden bg-white dark:bg-zinc-900">
         {!(apiKey || serverSideApiKeyIsSet) ? (
           <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
-            <div className="text-center text-4xl font-bold text-black dark:text-white">
-              Welcome to Chatbot UI
+            <div className="text-center text-3xl font-bold text-black dark:text-white">
+              Control can sometimes be an illusion.
             </div>
             <div className="text-center text-lg text-black dark:text-white">
               <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div>
               <div className="mb-2 font-bold">
-                Important: Chatbot UI is 100% unaffiliated with OpenAI.
+                <i>Mr Robot</i>
               </div>
             </div>
             <div className="text-center text-gray-500 dark:text-gray-400">

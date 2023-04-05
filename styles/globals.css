@@ -79,8 +79,22 @@ body {
     background: #1e1e20;
     padding-top: 45px;
 }
+.sidebar--left {
+  padding-right: 25px !important;
+}
+.sidebar--left--controls {
+  border: none !important;
+}
 .sidebar--button {
   top: 45px !important;
+}
+.chat--input {
+  background: none !important;
+}
+.chat--input--input {
+  border: 1px solid #cccccc12 !important;
+  /* border: none; */
+  padding: 10px;
 }
 .nodrag,
 input {

@@ -238,7 +238,7 @@ export const ChatInput: FC<Props> = ({
   }, []);
 
   return (
-    <div className="absolute bottom-0 left-0 w-full border-transparent bg-gradient-to-b from-transparent to-white pt-6 dark:border-white/20 dark:to-zinc-800 dark:from-transparent md:pt-2">
+    <div className="chat--input absolute bottom-0 left-0 w-full border-transparent bg-gradient-to-b from-transparent to-white pt-6 dark:border-white/20 dark:to-zinc-800 dark:from-transparent md:pt-2">
       <div className="stretch mx-2 mt-4 mb-[30px] flex flex-row gap-3 last:mb-2 md:mx-4 md:mt-[52px] md:last:mb-6 lg:mx-auto lg:max-w-3xl">
         {messageIsStreaming && (
           <button
@@ -258,7 +258,7 @@ export const ChatInput: FC<Props> = ({
           </button>
         )}
 
-        <div className="relative mx-2 flex w-full flex-grow flex-col rounded-md border bg-white shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:bg-zinc-800 dark:text-white dark:shadow-[0_0_15px_rgba(0,0,0,0.5)] sm:mx-4">
+        <div className="chat--input--input relative mx-2 flex w-full flex-grow flex-col rounded-md border bg-white shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:bg-zinc-800 dark:text-white dark:shadow-[0_0_15px_rgba(0,0,0,0.5)] sm:mx-4">
           <textarea
             ref={textareaRef}
             className="m-0 w-full resize-none border-0 bg-transparent !outline-0 p-0 py-2 pr-8 pl-2 text-black dark:bg-transparent dark:text-white md:py-3 md:pl-4"
