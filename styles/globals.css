@@ -74,29 +74,51 @@ pre code {
 body {
   -webkit-app-region: drag;
 }
-.sidebar--left,
-.sidebar--right {
+.solidpixel--sidebar--left,
+.solidpixel--sidebar--right {
     background: #1e1e20;
     padding-top: 45px;
 }
-.sidebar--left {
+.solidpixel--sidebar--left {
   padding-right: 25px !important;
 }
-.sidebar--left--controls {
+.solidpixel--sidebar--left--controls {
   border: none !important;
 }
-.sidebar--button {
-  top: 45px !important;
+.solidpixel--sidebar--left--inner {
+  
 }
-.chat--input {
-  background: none !important;
+.solidpixel--sidebar--right--inner {
+
 }
-.chat--input--input {
+.solidpixel--sidebar--button {
+  top: 11px !important;
+}
+.solidpixel--chat--input {
+  background: linear-gradient(0deg, rgb(24 24 27) 40%, rgba(60,23,145,0) 100%) !important;
+
+}
+.solidpixel--chat--input--input {
   border: 1px solid #cccccc12 !important;
   /* border: none; */
   padding: 10px;
+  margin-left: 20px !important;
+    margin-right: 20px !important;
 }
-.nodrag,
+.solidpixel--chat--input--input button {
+  top: 19px !important;
+  right: 16px !important;
+}
+
+.solidpixel--chat--input--input button svg {
+    stroke: none;
+    fill: white;
+}
+
+.solidpixel--model {
+  margin-top: 9px !important;
+}
+.solidpixel--nodrag,
 input {
   -webkit-app-region: no-drag;
 }
