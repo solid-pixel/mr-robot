@@ -76,10 +76,10 @@ body {
   -webkit-app-region: drag;
 }
 
-/* but any buttons inside the header shouldn't be draggable */
-/* header button {
+.nodrag,
+input {
   -webkit-app-region: no-drag;
-} */
+}
 
 /* perhaps move some items out of way for the traffic light */
 /* header div:first-child {
