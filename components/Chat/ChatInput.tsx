@@ -286,7 +286,7 @@ export const ChatInput: FC<Props> = ({
             className="absolute right-2 top-2 rounded-sm p-1 text-neutral-800 opacity-60 hover:bg-neutral-200 hover:text-neutral-900 dark:bg-opacity-50 dark:text-neutral-100 dark:hover:text-neutral-200"
             onClick={handleSend}
           >
-            <IconBolt size={20} />
+            <IconBolt size={22} />
           </button>
 
           {showPromptList && filteredPrompts.length > 0 && (
@@ -311,7 +311,7 @@ export const ChatInput: FC<Props> = ({
           )}
         </div>
       </div>
-      <div className="disclaimer px-3 pt-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
+      <div className="solidpixel--disclaimer px-3 pt-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
         <a
           href="https://github.com/mckaywrigley/chatbot-ui"
           target="_blank"
