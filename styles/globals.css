@@ -69,13 +69,19 @@ pre code {
 
 /* Drag area for Electron */
 #__next {
-    /* padding-top: 30px; */
     @apply bg-zinc-900;
 }
 body {
   -webkit-app-region: drag;
 }
-
+.sidebar--left,
+.sidebar--right {
+    background: #1e1e20;
+    padding-top: 45px;
+}
+.sidebar--button {
+  top: 45px !important;
+}
 .nodrag,
 input {
   -webkit-app-region: no-drag;
