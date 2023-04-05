@@ -43,6 +43,7 @@ pre:has(div.codeblock) {
 }
 
 /* Custom */
+
 /* .codeblock {
     background: #212123;
 }
@@ -66,6 +67,23 @@ pre code {
   background: transparent !important;
 }
 
-/* code span {
-    background: #212123 !important;
+/* Drag area for Electron */
+#__next {
+    padding-top: 30px;
+    @apply bg-zinc-900;
+}
+body {
+  -webkit-app-region: drag;
+}
+
+/* but any buttons inside the header shouldn't be draggable */
+/* header button {
+  -webkit-app-region: no-drag;
 } */
+
+/* perhaps move some items out of way for the traffic light */
+/* header div:first-child {
+  margin-left: 100px;
+  margin-top: 25px;
+} */
+
