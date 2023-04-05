@@ -57,11 +57,11 @@ pre:has(div.codeblock) {
   display: none !important;
 }
 .solidpixel--sender {
-  position: absolute;
-  top: 8px;
-  right: -11px;
-  font-size: 12px;
-  opacity: .2;
+    position: absolute;
+    top: 8px;
+    right: -11px;
+    font-size: 12px;
+    opacity: .2;
 }
 pre code {
   background: transparent !important;
