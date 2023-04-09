@@ -41,70 +41,9 @@ html {
 pre:has(div.codeblock) {
   padding: 0;
 }
-parent;
-}
 
-/* Drag area for Electron */
-#__next {
-    @apply bg-zinc-900;
-}
-body {
-  -webkit-app-region: drag;
-}
-.solidpixel--sidebar--left,
-.solidpixel--sidebar--right {
-    background: #1e1e20;
-    padding-top: 45px;
-}
-.solidpixel--sidebar--left {
-  padding-right: 25px !important;
-}
-.solidpixel--sidebar--left--controls {
-  border: none !important;
-}
-.solidpixel--sidebar--left--inner {
-  
-}
-.solidpixel--sidebar--right--inner {
 
-}
-.solidpixel--sidebar--button {
-  top: 11px !important;
-}
-.solidpixel--chat--input {
-  background: linear-gradient(0deg, rgb(24 24 27) 40%, rgba(60,23,145,0) 100%) !important;
-
-}
-.solidpixel--chat--input--input {
-  border: 1px solid #cccccc12 !important;
-  /* border: none; */
-  padding: 10px;
-  margin-left: 20px !important;
-    margin-right: 20px !important;
-}
-.solidpixel--chat--input--input button {
-  top: 19px !important;
-  right: 16px !important;
-}
-
-.solidpixel--chat--input--input button svg {
-    stroke: none;
-    fill: white;
-}
-
-.solidpixel--chat--input--input button:hover {
-  opacity: 1;
-  
-}
-
-.solidpixel--model {
-  margin-top: 9px !important;
-}
-.solidpixel--nodrag,
-input {
-  -webkit-app-region: no-drag;
-}
-
+/* Custom */
 
 /* .codeblock {
     background: #212123;
@@ -189,3 +128,9 @@ body {
 input {
   -webkit-app-region: no-drag;
 }
+
+/* perhaps move some items out of way for the traffic light */
+/* header div:first-child {
+  margin-left: 100px;
+  margin-top: 25px;
+} */
