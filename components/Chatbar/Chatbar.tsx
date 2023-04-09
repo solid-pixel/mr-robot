@@ -122,9 +122,9 @@ export const Chatbar: FC<Props> = ({
 
   return (
     <div
-      className={`fixed top-0 bottom-0 z-50 flex h-full w-[260px] flex-none flex-col space-y-2 bg-[#202123] p-2 transition-all sm:relative sm:top-0`}
+      className={`solidpixel--sidebar--left fixed top-0 bottom-0 z-50 flex h-full w-[260px] flex-none flex-col space-y-2 bg-[#202123] p-2 transition-all sm:relative sm:top-0`}
     >
-      <div className="flex items-center">
+      <div className="solidpixel--sidebar--left--inner flex items-center">
         <button
           className="flex w-[190px] flex-shrink-0 cursor-pointer select-none items-center gap-3 rounded-md border border-white/20 p-3 text-[14px] leading-normal text-white transition-colors duration-200 hover:bg-gray-500/10"
           onClick={() => {
