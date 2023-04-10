@@ -48,9 +48,10 @@ pre:has(div.codeblock) {
 /* .codeblock {
     background: #212123;
 }
+*/
 .codeblock pre {
-    background: #27272a !important;
-} */
+    background: linear-gradient(19deg, rgb(25 23 34) 20%, rgb(22 22 23) 100%) !important;
+} 
 
 .dark\:bg-\[\#343541\] {
   background-color: #1e1e20 !important;
@@ -64,11 +65,12 @@ pre:has(div.codeblock) {
   display: none !important;
 }
 .solidpixel--sender {
-    position: absolute;
+    /* position: absolute;
     top: 8px;
     right: -11px;
     font-size: 12px;
-    opacity: .2;
+    opacity: .2; */
+    display: none !important;
 }
 pre code {
   background: transparent !important;
@@ -100,7 +102,9 @@ body {
 }
 .solidpixel--sidebar--button {
   top: 11px !important;
+  opacity: 0.3;
 }
+
 .solidpixel--chat--input {
   background: linear-gradient(0deg, rgb(24 24 27) 40%, rgba(60,23,145,0) 100%) !important;
 
@@ -137,6 +141,12 @@ body {
   border-bottom-right-radius: 10px;
     margin: 0 20px;
 }
+.solidpixel--message-ai-thinkking {
+    background-color: #303031 !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+    margin: 0 20px;
+}
 .solidpixel--message-me {
 background: #414142 !important;
     border-top-left-radius: 10px;
@@ -146,6 +156,8 @@ background: #414142 !important;
 
 .solidpixel--model {
   margin-top: 9px !important;
+  background: transparent;
+    opacity: 0.3;
 }
 .solidpixel--nodrag,
 input {
