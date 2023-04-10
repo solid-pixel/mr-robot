@@ -51,6 +51,12 @@ pre:has(div.codeblock) {
 .codeblock pre {
     background: #27272a !important;
 } */
+
+.dark\:bg-\[\#343541\] {
+  background-color: #1e1e20 !important;
+}
+
+
 .prose :where(pre):not(:where([class~=not-prose] *)) {
   border-radius: 15px;
 }
@@ -106,9 +112,13 @@ body {
   margin-left: 20px !important;
     margin-right: 20px !important;
 }
+.solidpixel--chat--input--input textarea {
+    border: 0 !important;
+    outline: 0 !important;
+}
 .solidpixel--chat--input--input button {
   top: 19px !important;
-  right: 16px !important;
+  /* right: 16px !important; */
 }
 
 .solidpixel--chat--input--input button svg {
@@ -119,6 +129,19 @@ body {
 .solidpixel--chat--input--input button:hover {
   opacity: 1;
   
+}
+
+.solidpixel--message-ai {
+  background-color: #2d2d2e !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+    margin: 0 20px;
+}
+.solidpixel--message-me {
+background: #414142 !important;
+    border-top-left-radius: 10px;
+    margin: 10px 20px 0 20px;
+    border-top-right-radius: 10px;
 }
 
 .solidpixel--model {
