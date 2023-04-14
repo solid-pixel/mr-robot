@@ -796,7 +796,7 @@ const Home: React.FC<HomeProps> = ({
               </div>
             ) : (
               <button
-                  className="solidpixel--sidebar--button fixed top-2.5 left-4 z-50 h-7 w-7 text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-300 sm:top-0.5 sm:left-4 sm:h-8 sm:w-8 sm:text-neutral-700"
+                className="solidpixel--sidebar--button fixed top-2.5 left-4 z-50 h-7 w-7 text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-300 sm:top-0.5 sm:left-4 sm:h-8 sm:w-8 sm:text-neutral-700"
                 onClick={handleToggleChatbar}
               >
                 <IconArrowBarRight />
@@ -846,7 +846,7 @@ const Home: React.FC<HomeProps> = ({
               </div>
             ) : (
               <button
-                  className="solidpixel--sidebar--button fixed top-2.5 right-4 z-50 h-7 w-7 text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-300 sm:top-0.5 sm:right-4 sm:h-8 sm:w-8 sm:text-neutral-700"
+                className="solidpixel--sidebar--button fixed top-2.5 right-4 z-50 h-7 w-7 text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-300 sm:top-0.5 sm:right-4 sm:h-8 sm:w-8 sm:text-neutral-700"
                 onClick={handleTogglePromptbar}
               >
                 <IconArrowBarLeft />
