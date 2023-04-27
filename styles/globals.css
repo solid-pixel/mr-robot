@@ -41,3 +41,9 @@ html {
 pre:has(div.codeblock) {
   padding: 0;
 }
+
+/* Solid Pixel */
+textarea:focus, input:focus {
+    outline: 1px solid #cccccca8;
+    border-radius: 5px;
+}
